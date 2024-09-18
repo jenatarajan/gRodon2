@@ -159,7 +159,7 @@ getCodonStatistics <- function(genes, highly_expressed, fragments = FALSE, depth
   if(fragments == TRUE){
     filtered <- filterSeq(genes = genes,
                           highly_expressed = highly_expressed,
-                          length_threshold = 120,
+                          length_threshold = 0,
                           depth_of_coverage = depth_of_coverage)
   } else {
     filtered <- filterSeq(genes = genes,
@@ -231,7 +231,7 @@ getCodonStatistics_i <- function(genes, highly_expressed, fragments = FALSE, dep
   if(fragments == TRUE){
     filtered <- filterSeq(genes = genes,
                           highly_expressed = highly_expressed,
-                          length_threshold = 120,
+                          length_threshold = 0,
                           depth_of_coverage = depth_of_coverage)
   } else {
     filtered <- filterSeq(genes = genes,
